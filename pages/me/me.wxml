@@ -1,0 +1,53 @@
+<!--pages/me/me.wxml-->
+<view id="pic">
+  <!-- <image style="display:block;width:80px;height:80px;border-radius:50%;border:3px solid #fff;" src="../../images/touxiang.jpg"></image> -->
+  <view style="display:block;width:80px;height:80px;border-radius:50%;border:3px solid #fff;overflow:hidden;">
+    <open-data  type="userAvatarUrl"></open-data>
+  </view>
+  <view style="color:#fff;height:40px;line-height:40px;">
+    <open-data  type="userNickName"></open-data>
+  </view>
+</view>
+<view class="dingdan">
+  <view class="ddtitle">
+    <view>我的订单</view>
+  </view>
+  <view class="ddlist">
+    <view>
+      <image style="display:block;width:40px;height:40px;border-radius:50%;" src="../../images/dianying.jpg"></image>
+      <view style="color:#000;height:40px;line-height:40px;font-size:12px;text-align:center;">电影</view>
+    </view>
+    <view>
+      <image style="display:block;width:40px;height:40px;border-radius:50%;" src="../../images/piao.jpg"></image>
+      <view style="color:#000;height:40px;line-height:40px;font-size:12px;text-align:center;">演出</view>
+    </view>
+    <view>
+      <image style="display:block;width:40px;height:40px;border-radius:50%;" src="../../images/jiangbei.jpg"></image>
+      <view style="color:#000;height:40px;line-height:40px;font-size:12px;text-align:center;">赛事</view>
+    </view> 
+  </view> 
+</view>
+<view id="fuli">
+  <view class="fllist" style="border-bottom:1px solid #ddd;">
+    优惠券
+    <view style="float:right; font-size:18px;font-weight:bold;color:#ddd;">></view>
+  </view>
+  <view class="fllist" style="border-bottom:1px solid #ddd;">
+    折扣卡
+    <view style="float:right; font-size:18px;font-weight:bold;color:#ddd;">></view>
+  </view>
+  <view class="fllist">
+    观影卡/票
+    <view style="float:right; font-size:18px;font-weight:bold;color:#ddd;">></view>
+  </view>
+</view>
+<view id="like">
+  <view class="fllist" style="border-bottom:1px solid #ddd;">
+    想看的电影
+    <view style="float:right; font-size:18px;font-weight:bold;color:#ddd;">></view>
+  </view>
+  <view class="fllist">
+    看过的电影
+    <view style="float:right; font-size:18px;font-weight:bold;color:#ddd;">></view>
+  </view>
+</view>

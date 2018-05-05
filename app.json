@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/logs/logs",
+    "pages/test/test",
+    "pages/me/me"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#d43d3d",
+    "navigationBarTitleText": "浅影",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "color":"#aaa",
+    "selectedColor":"#000",
+    "position":"bottom",
+    "backgroundColor":"#eee",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "iconPath":"images/home.png",
+        "selectedIconPath":"images/home-actived.png",
+        "text":"首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "images/note.png",
+        "selectedIconPath": "images/note-actived.png",
+        "text": "电影推荐"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "images/profile.png",
+        "selectedIconPath": "images/profile-actived.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

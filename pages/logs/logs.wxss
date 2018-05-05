@@ -1,0 +1,29 @@
+
+#content {
+  padding:0 10rpx;
+}
+.list {
+  height:100%;
+  padding:20rpx 0;
+  border-bottom:1px solid #ddd;
+  font-size:12px;
+}
+.show > view {
+  padding:10rpx 0;
+}
+.nm {
+  font-size:18px;
+}
+.sc > span {
+  font-size:16px;
+  color:#FFD700;
+}
+.showInfo {
+  color:#ccc;
+}
+.star {
+  width:450rpx;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}

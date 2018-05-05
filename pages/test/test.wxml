@@ -1,0 +1,32 @@
+<!--pages/test/test.wxml-->
+<view id="title">
+  <view style=" border:2px solid #fff;margin-left:30rpx;"><image mode="aspectFill" src="{{ movie.img }}" alt="" style="width:200rpx;height:300rpx;float:left;"></image></view>
+  <view class="show" style="height:300rpx;margin-left:30rpx;">
+    <view style="font-size:34rpx;color:#fff;">{{ movie.nm }}</view>
+    <view wx:if="{{movie.sc}}">评分：<span style="color:#FFD700;font-size:40rpx;">{{ movie.sc }}</span></view>
+    <view wx:else style="font-size:30rpx;"><span style="color:#FFD700;">{{ movie.wish }}</span>  人想看</view>
+    <view>({{ movie.snum }}人评分)</view>
+    <view class="cat">{{ movie.cat }} <text wx:if="{{movie.ver}}">{{movie.ver}}</text></view>
+    <view>
+      <text>{{ movie.src }} / </text>
+      <text>{{ movie.dur }}分钟</text>
+    </view>
+    <view>{{ movie.rt }}</view>
+  </view>
+</view>
+<view class="conTitle">剧情简介 ------------------------------------------
+<view class="mindv"></view>
+</view>
+<view class="content">{{ content }}</view>
+<view class="dv"></view>
+<view class="conTitle">剧照 ------------------------------------------
+<view class="mindv"></view>
+</view>
+<view style="padding:20px 0;">
+  <scroll-view scroll-x  style="white-space: nowrap;">
+    <view wx:for="{{ photos }}" style="display: inline-block;margin-right:10rpx;"> 
+      <image src="{{ photos[index] }}" alt="" mode="aspectFill" style="height:200rpx;width:300rpx"></image>
+    </view> 
+  </scroll-view>
+</view>
+ 

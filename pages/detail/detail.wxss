@@ -1,0 +1,22 @@
+/* pages/detail/detail.wxss */
+@import "/wxParse/wxParse.wxss";
+#container{
+  padding:20rpx;
+}
+.title {
+  font-size:45rpx;
+  font-weight: bold;
+  padding-bottom:20rpx;
+  text-align: justify;
+}
+.content{
+  font-size:40rpx;
+  overflow:hidden;
+}
+.content .wxParse-p {
+  padding:20rpx 0;
+}
+.author {
+  font-size:40rpx;
+  padding: 20rpx 10rpx;
+}

@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<view id="container">
+  <!--导航start  -->
+  <view class="nav">
+    <!--搜索框start  -->
+    <view class="search">
+      <image src="/images/search-actived.png" mode="aspectFit" style="height:40rpx;width:40rpx; vertical-align:center;" />
+    </view>
+    <!--搜索框end -->
+    <!--菜单start  -->
+    <scroll-view scroll-x  class="menu">
+      <view wx:key="index" wx:for="{{ menus }}" 
+      class="item {{ item.key == current ? 'active' : '' }}"
+      data-key="{{ item.key }}"
+      bindtap="switcher">{{ item.name }}</view>
+    </scroll-view>
+    <view class="add">
+      <image src="/images/add.png" mode="aspectFit" style="height:40rpx;width:40rpx; vertical-align:center;" />
+    </view>
+    <view class="profile">
+      <image src="/images/profile.png" mode="aspectFit" style="height:40rpx;width:40rpx; vertical-align:center;" />
+    </view>
+  <!--菜单end  -->
+  </view>
+<!--导航end  -->
+  <swiper current-item-id="{{ current }}"  bindchange="change" style="height:{{ contentHeight }}px; width:100%;" id="content">
+    <swiper-item class="swiper"  wx:key="index" wx:for="{{ menus }}" item-id="{{ item.key }}">
+      <scroll-view bindscrolltolower="scrolltolower"  scroll-y style="height:{{ contentHeight }}px;width: 100%">
+        <navigator url="../detail/detail?id={{ item.docid }}" class="item" 
+         wx:key="index" wx:for="{{item.news}}">
+          <view class="left">
+            <view class="title">{{ item.title }}</view>
+            <view wx:if="{{ item.key == yule }}" class="ref">{{item.source}}</view>
+            <view wx:else class="ref">{{item.recSource}}</view>
+          </view>
+          <view class="right" wx:if="{{ item.key == yule }}">
+            <image src="{{ item.imgsrc }}" mode="widthFix" style="width:100%" alt=""/>
+          </view>
+          <view class="right" wx:else >
+            <image src="{{ item.img }}" mode="widthFix" style="width:100%" alt=""/>
+          </view>
+        </navigator>
+
+        <view wx:if="{{ current !=  'redian' }}" style="width:100%;height:80rpx;text-align:center;line-height:80rpx;"><image style="width:300rpx" mode="widthFix" src="../../images/lazy.gif" /></view>
+      </scroll-view>  
+    </swiper-item>
+  </swiper>
+
+</view>

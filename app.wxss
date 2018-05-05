@@ -1,0 +1,6 @@
+/**app.wxss**/
+.clearfix::after {
+  clear:both;
+  display:block;
+  content: '';
+}

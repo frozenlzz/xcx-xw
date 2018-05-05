@@ -1,0 +1,15 @@
+<!--logs.wxml-->
+<view id="content">
+  <view class="list clearfix" wx:key="index" wx:for="{{movie}}">
+    <navigator url="/pages/test/test?id={{ movie[index].id }}">
+      <view style="float:left;"><image src="{{ movie[index].img }}" alt="" style="width:160rpx;height:220rpx;float:left;"></image></view>
+      <view class="show" style="float:right;width:75%;">
+        <view class="nm">{{ movie[index].nm }}</view>
+        <view  wx:if="{{movie[index].sc}}" class="sc">猫眼评分 <span>{{ movie[index].sc }}</span></view>
+        <view wx:else class="sc"><span>{{ movie[index].wish }}</span>  人想看</view>
+        <view class="star">主演:{{ movie[index].star }}</view>
+        <view class="showInfo">{{ movie[index].showInfo }}</view>
+      </view>
+    </navigator>
+  </view>
+</view>
