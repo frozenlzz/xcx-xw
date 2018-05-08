@@ -3,14 +3,14 @@
 ### 最新的新闻，以及最新的电影推送
 
 ```
-git clone https://github.com/xiaohigh/learn.git
+git clone https://github.com/frozenlzz/xcx-xw.git
 ```
 
 
 
 ### 界面
 
- ![page01](images\img\page01.png)
+ ![page01](http://github.com/frozenlzz/xcx-xw/images/img/page01.png)
 
  ![page02](images\img\page02.png)
 
