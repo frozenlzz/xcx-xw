@@ -10,7 +10,7 @@ git clone https://github.com/frozenlzz/xcx-xw.git
 
 ### 界面
 
- ![page01](http://github.com/frozenlzz/xcx-xw/images/img/page01.png)
+ ![page01](https://github.com/frozenlzz/xcx-xw/blob/master/images/img/page01.png?raw=true)
 
  ![page02](images\img\page02.png)
 
