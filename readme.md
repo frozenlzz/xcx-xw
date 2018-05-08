@@ -12,11 +12,11 @@ git clone https://github.com/frozenlzz/xcx-xw.git
 
  ![page01](https://github.com/frozenlzz/xcx-xw/blob/master/images/img/page01.png?raw=true)
 
- ![page02](images\img\page02.png)
+ ![page02](https://github.com/frozenlzz/xcx-xw/blob/master/images/img/page02.png?raw=true)
 
- ![page03](images\img\page03.png)
+ ![page03](https://github.com/frozenlzz/xcx-xw/blob/master/images/img/page03.png?raw=true)
 
- ![page04](images\img\page04.png)
+ ![page04](https://github.com/frozenlzz/xcx-xw/blob/master/images/img/page04.png?raw=true)
 
 
 
